@@ -1,0 +1,15 @@
+{% extends "notification_features/base.html" %}
+{% block content %}
+    <h1>Users</h1>
+    {% for user in users %}
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ user.profile.image.url }}">
+            <div class="media-body">
+            <div class="article-metadata">
+                <p class="article-title">{{ user.first_name }}</p>
+                <p class="article-content">{{ user.username }}</p>
+            </div>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,42 @@
+{
+  "name": "NotificationFeatures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --entry ./django_backend/frontend/src/index.js --output-path ./django_backend/frontend/static/frontend/",
+    "build": "webpack --mode production --entry ./django_backend/frontend/src/index.js --output-path ./django_backend/frontend/static/frontend/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jande48/ComeWithNotificationFeatures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jande48/ComeWithNotificationFeatures/issues"
+  },
+  "homepage": "https://github.com/jande48/ComeWithNotificationFeatures#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "react-router-dom": "^5.2.0",
+    "redux-logger": "^3.0.6",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  }
+}
