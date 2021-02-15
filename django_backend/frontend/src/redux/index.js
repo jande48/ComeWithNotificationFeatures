@@ -1,1 +1,1 @@
-export { addNotification } from './notificationsReducer/notificationsActions'
+export { addNotification, getFriends } from './notificationsReducer/notificationsActions'

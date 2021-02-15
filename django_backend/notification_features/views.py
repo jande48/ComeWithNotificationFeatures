@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Messages
 
+
 def home(request):
     context = {
         'posts': Messages.objects.all(),

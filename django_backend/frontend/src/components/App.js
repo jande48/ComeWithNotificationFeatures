@@ -16,7 +16,6 @@ class App extends Component {
                         <Route path="/" component={HomeComponent} />
                     </Switch>
                 </Router>
-                <Notifications/>
             </Provider>
         )
 

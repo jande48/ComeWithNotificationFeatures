@@ -46,8 +46,9 @@ urlpatterns = [
              template_name='users/password_reset_complete.html'
          ),
          name='password_reset_complete'),
+    path('notifications', include('notification_features.urls')),
     path('', include('frontend.urls')),
-    path('', include('notification_features.urls')),
+    
     # path('/notifications_react/', include('notifications_react.urls')),
 ]
 
